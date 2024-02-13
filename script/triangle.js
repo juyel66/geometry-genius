@@ -65,3 +65,40 @@ rectangleAreaSpan.innerText = rectArea;
 }
 
 
+// Parallelogram Calculate
+
+
+function ParallelogramCalculateArea(){
+    // console.log('para connect');
+
+    // parallelogram Base 
+    const parallelogramBaseInput = document.getElementById('parallelogram-base');
+    const parallelogramBaseText = parallelogramBaseInput.value;
+    const paraBase = parseFloat(parallelogramBaseText);
+    console.log(paraBase);
+
+
+    // parallelogram height
+
+    const parallelogramHeightInput= document.getElementById('parallelogram-height')
+    // console.log('connect');
+    const parallelogramHeightText = parallelogramHeightInput.value;
+    const  paraHeight= parseFloat(parallelogramHeightText);
+    console.log(paraHeight);
+
+
+    // calculate parallelogram 
+
+    const paraArea = paraBase*paraHeight;
+    console.log('Your Area is:',paraArea);
+
+    // display parallelogram 
+
+    const parallelogramDisplay = document.getElementById('parallelogram-area');
+    parallelogramDisplay.innerText= paraArea;
+    // console.log();
+
+
+}
+
+

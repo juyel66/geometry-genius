@@ -28,10 +28,10 @@
                       <h2 class="card-title">triangle</h2>
                       <p>Area (A) = 0.5*b*h</p>
                       <div class="flex">
-                        <input id="triangle-base" class="w-16 text-2xl rounded-sm border-2 border-gray-700 " type="text" placeholder="b">
-                        <span>CM</span>
-                        <input id="triangle-height" class="w-16 text-2xl rounded-sm border-2 border-gray-700 "   type="text" placeholder="h">
-                        <span>CM</span>
+                        <input id="triangle-base" class="w-20 text-2xl rounded-sm border-2 border-gray-700 " type="text" placeholder="b">
+                        <span>cm</span>
+                        <input id="triangle-height" class="w-20 text-2xl rounded-sm border-2 border-gray-700 "   type="text" placeholder="h">
+                        <span>cm</span>
                       </div>
                       <div>
                         <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
@@ -51,10 +51,10 @@
                       <p>Area (A) = w *I</p>
 
                       <div class="flex">
-                        <input id="rectangle-base" class="w-16 text-2xl rounded-sm border-2 border-gray-700 " type="text" placeholder="L">
-                        <span>CM</span>
-                        <input id="rectangle-height" class="w-16 text-2xl rounded-sm border-2 border-gray-700 "   type="text" placeholder="W">
-                        <span>CM</span>
+                        <input id="rectangle-base" class="w-20 text-2xl rounded-sm border-2 border-gray-700 " type="text" placeholder="L">
+                        <span>cm</span>
+                        <input id="rectangle-height" class="w-20 text-2xl rounded-sm border-2 border-gray-700 "   type="text" placeholder="W">
+                        <span>cm</span>
                       </div>
                       <div>
                         <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
@@ -69,10 +69,25 @@
                 <div class="card  bg-base-100 shadow-xl">
                     <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
+                      <h2 class="card-title">Parallelogram</h2>
                       <p>Area (A) = b*h</p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+
+                        <div class="flex">
+                          <input id="parallelogram-base" class="border-2 rounded-sm text-2xl border-gray-700 w-20" type="text" placeholder="b">
+                          <span>cm</span>
+                          <input id="parallelogram-height" class="border-2 rounded-sm text-xl border-gray-700 w-20"  type="text" placeholder="h">
+                          <span>cm</span>
+                        </div>
+
+                        <div>
+                          <p class="text-2xl">Area:<span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
+                        </div>
+
+                        
+
+
+                        <button onclick="ParallelogramCalculateArea()" class="w-full btn btn-primary">Buy Now</button>
                       </div>
                     </div>
                   </div>
